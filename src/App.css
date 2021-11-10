@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.show-cards {
+  max-width: 600px;
+  max-height: 1000px;
+  margin: 10px auto;
+  padding: 20px; 
+}
+
+.description{
+  text-align: left;
+}
+
+.cards-display{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.card img{
+  width: 150px;
+  height: 270px;
+}
+
+.tarot-description{
+  margin-bottom: 10px;
+}
