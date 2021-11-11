@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# package lock issues, may need to comment this back out eventually
+package-lock.json
