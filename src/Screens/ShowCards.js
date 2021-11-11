@@ -10,14 +10,6 @@ function ShowCards( props ){
 
     const [ chosenCards, setChosenCards ] = useState([ 2, 34, 41]);
 
-    if (chosenCards.length > 2){
-        console.log(chosenCards);
-console.log(chosenCards[0]);
-console.log(cards[chosenCards[0]]);
-console.log(imageFiles[cards[chosenCards[0]]]);
-console.log(imageFiles[cards[chosenCards[0]].name_short] );
-    }
-
     // TODO -- move random card selection to proper place once available and remove useEffect
     useEffect(() => {
 
@@ -33,10 +25,6 @@ console.log(imageFiles[cards[chosenCards[0]].name_short] );
         setChosenCards(tempCards);
       }, []);
 
-     const getImage = ( index ) => {
-         return chosenCards[index] !== undefined ? imageFiles[cards[chosenCards[index]]] + '.jpg' : '';
-     }
-
     return (
         <div className="show-cards">
             <h1>Your reading {question} </h1>
@@ -44,17 +32,17 @@ console.log(imageFiles[cards[chosenCards[0]].name_short] );
                 <Card 
                     heading="Past" 
                     image={ imageFiles[cards[chosenCards[0]].name_short] }
-                    altText={ cards[chosenCards[0]].name }
+                    name={ cards[chosenCards[0]].name }
                 />
                 <Card 
                     heading="Present" 
                     image={ imageFiles[cards[chosenCards[1]].name_short] }
-                    altText={ cards[chosenCards[1]].name }
+                    name={ cards[chosenCards[1]].name }
                 />
                 <Card 
                     heading="Future" 
                     image={ imageFiles[cards[chosenCards[2]].name_short] }
-                    altText={ cards[chosenCards[2]].name }
+                    name={ cards[chosenCards[2]].name }
                 />
             </div>
             <Description 
