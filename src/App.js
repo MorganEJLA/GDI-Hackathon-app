@@ -12,6 +12,7 @@ function App() {
   const [ question, setQuestion ] = useState('')
 
   const updateToShuffling = (  ) => setAppState( 'shuffling' );
+
   const updateToResults = (  ) => {
     let tempCards = [];
     while ( tempCards.length < 3 ) {
@@ -28,12 +29,20 @@ function App() {
 
   const updateToInitial = (  ) => setAppState( 'initial' );
 
-  let currentScreen =  <Initial onClick = { updateToShuffling } />;
+  let currentScreen =  (
+    <Initial 
+      updateToShuffling = { updateToShuffling }
+      updateQuestion = { setQuestion } />
+  );
 
   if ( appState === 'shuffling') {
     currentScreen = <Shuffling onClick = { updateToResults } />;
   } else if (appState === 'results') {
-     currentScreen = <ShowCards onClick = { updateToInitial } cards={ chosenCards } />;
+     currentScreen = <ShowCards 
+      onClick = { updateToInitial } 
+      cards={ chosenCards }
+      question = { question } 
+    />;
   }
 
   return (
