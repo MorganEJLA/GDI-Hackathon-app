@@ -1,15 +1,43 @@
 import './App.css';
+import React, { useState, useEffect } from 'react';
+import Header from './Components/Header';
+import Initial from './Components/Initial';
+import Shuffling from './Components/Shuffling';
 import ShowCards from './Components/ShowCards';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button} from 'react-bootstrap';
-
-// test Button added along with bootstrap core styling, feel free to remove - jules
 
 function App() {
+
+  const [ appState, setAppState ] = useState('initial'); // options are initial, shuffling, results
+  const [ chosenCards, setChosenCards ] = useState([ 0, 0, 0]);
+
+  const updateToShuffling = (  ) => setAppState( 'shuffling' );
+  const updateToResults = (  ) => {
+    let tempCards = [];
+    while ( tempCards.length < 3 ){
+    const newCard = Math.floor( Math.random() * 78 );
+    if ( ! tempCards.includes(newCard) ) {
+        tempCards.push(newCard);
+      };
+   }
+   
+   setChosenCards(tempCards);
+   setAppState( 'results' );
+   }
+
+  const updateToInitial = (  ) => setAppState( 'initial' );
+
+  let currentScreen =  <Initial onClick = { updateToShuffling } />;
+
+  if ( appState === 'shuffling') {
+    currentScreen = <Shuffling onClick = { updateToResults } />;
+  } else if (appState === 'results') {
+     currentScreen = <ShowCards onClick = { updateToInitial } cards={ chosenCards } />;
+  }
+
   return (
     <div className="App">
-      <ShowCards />
-      <Button variant="dark">Dark Test Button</Button>{' '}
+      <Header />
+      {currentScreen}
     </div>
   );
 }
