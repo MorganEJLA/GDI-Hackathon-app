@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Description from './Description';
-//import Card from './Card';
 import Card from './Card';
 import cards, { imageFiles } from '../cards';
 
