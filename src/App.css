@@ -1,9 +1,12 @@
 .App {
   text-align: center;
   background-color:#fadf5a;
+ 
 }
 body { 
   background-color:#fadf5a;
+  font-family: 'Lora', serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .page-header {
