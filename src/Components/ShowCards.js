@@ -8,22 +8,7 @@ function ShowCards( props ){
     // TODO -- remove, just for testing
     const question = props.question ? 'about: ' + props.question : 'about: Will I be a successful developer?';
 
-    const [ chosenCards, setChosenCards ] = useState([ 2, 34, 41]);
-
-    // TODO -- move random card selection to proper place once available and remove useEffect
-    useEffect(() => {
-
-        let tempCards = [];
-
-        while ( tempCards.length < 3 ){
-            const newCard = Math.floor( Math.random() * 78 );
-            if ( ! tempCards.includes(newCard) ) {
-                tempCards.push(newCard);
-            };
-        }
-
-        setChosenCards(tempCards);
-      }, []);
+    let chosenCards = props.cards ? props.cards : [ 2, 2, 2];
 
     return (
         <div className="show-cards">
@@ -60,6 +45,7 @@ function ShowCards( props ){
                 description={ cards[chosenCards[2]].desc}
                 meaning={ cards[chosenCards[2]].meaning_up}
             />
+            <button onClick={props.onClick}></button>
         </div>
     )
 }

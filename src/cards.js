@@ -916,6 +916,6 @@ const cards = [
     ar19: "RWS_Tarot_19_Sun",
     ar20: "RWS_Tarot_20_Judgement",
     ar21: "RWS_Tarot_21_World",
- }
+ };
 
   export default cards;
