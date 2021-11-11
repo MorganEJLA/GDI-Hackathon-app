@@ -1,11 +1,23 @@
 import React, { useState, useEffect } from 'react';
+// import Question from './Question'
 
 function Initial( props ){
 
     return (
         <div className="initial">
-            <h1>Placeholder -- to be replaced by Lauren's code</h1>
-            <button onClick={props.onClick}></button>     
+          <div className="Question">
+          What would you like to know? 
+          </div>
+
+          <form>
+            <div className="inputquestion">
+              <input type="text" className ='input' placeholder='Enter your question here...'/>
+              <div className="button">
+                <button className="btn btn-primary" onClick={props.onClick}>Submit</button>
+              </div>
+            </div>
+          </form>
+          
         </div>
     )
 }

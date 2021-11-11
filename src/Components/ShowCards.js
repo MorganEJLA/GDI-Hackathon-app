@@ -45,7 +45,7 @@ function ShowCards( props ){
                 description={ cards[chosenCards[2]].desc}
                 meaning={ cards[chosenCards[2]].meaning_up}
             />
-            <button onClick={props.onClick}></button>
+            <button className="btn btn-primary" onClick={props.onClick}>Start Over</button>
         </div>
     )
 }

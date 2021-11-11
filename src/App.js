@@ -9,20 +9,22 @@ function App() {
 
   const [ appState, setAppState ] = useState('initial'); // options are initial, shuffling, results
   const [ chosenCards, setChosenCards ] = useState([ 0, 0, 0]);
+  const [ question, setQuestion ] = useState('')
 
   const updateToShuffling = (  ) => setAppState( 'shuffling' );
   const updateToResults = (  ) => {
     let tempCards = [];
-    while ( tempCards.length < 3 ){
+    while ( tempCards.length < 3 ) {
     const newCard = Math.floor( Math.random() * 78 );
     if ( ! tempCards.includes(newCard) ) {
         tempCards.push(newCard);
       };
-   }
-   
-   setChosenCards(tempCards);
-   setAppState( 'results' );
-   }
+    }
+    setChosenCards(tempCards);
+    setAppState( 'results' );
+  }
+
+
 
   const updateToInitial = (  ) => setAppState( 'initial' );
 
