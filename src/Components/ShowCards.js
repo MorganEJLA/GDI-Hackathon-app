@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Description from '../components/Description';
-import Card from '../components/Card';
+import Description from './Description';
+import Card from './Card';
 import cards, { imageFiles } from '../cards';
 
 function ShowCards( props ){

@@ -1,5 +1,5 @@
 import './App.css';
-import ShowCards from './screens/ShowCards';
+import ShowCards from './Components/ShowCards';
 
 function App() {
   return (
