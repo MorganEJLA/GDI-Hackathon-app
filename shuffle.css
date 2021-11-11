@@ -1,5 +1,11 @@
-#container{
+body{
+  margin:0;
+  background:#80ADC2;
+
+}
+  #container{
   width: 100%;
+ 
   
 
 }
@@ -14,16 +20,20 @@ top: 50%;
 transform: translate(-50%,-50%);
 }
 
-article {
+article{
 margin: 0;
+/* background: url('public/assets/tarot-card-back.png') no-repeat;  */
+width: 150px;
+height: 350px;
 position: absolute;
+border-radius: 3px;
 }
 
 figure {
 position: absolute;
-background: url('public/assets/tarot-back.png');
+/* background: url('public/assets/tarot-card-back.png') no-repeat; */
 width: 150px;
-height: 150px;
+height: 350px;
 border-radius: 3px;
 animation: shuffle2 2s ease infinite;
 margin: 0;
@@ -52,10 +62,11 @@ animation-delay: 1.5s;
 
 
 div {
-width: 125px;
-height: 175px;
 position: absolute;
-background: url('public/assets/tarot-back.png');
+width: 150px;
+height: 350px;
+/* background:url('public/assets/tarot-card-back.png') no-repeat; */
+border-radius: 3px;
 animation: shuffle1 2s ease infinite;
 box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.79);
 }
