@@ -15,24 +15,18 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  
     <title>Tarot Reading</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <main>
-      <nav class="menu">
-        <ul>
-          <li class="menu-item"><a href="#" class="menu-item" id="instruction">Instructions</a></li>
-          <li class="menu-item"><a href="#" class="menu-item" id="about">About</a></li>
-        </ul>
-      </nav>
+    </head>
 
-      <h1>Tarot Reading</h1>
-      <p>What would you like to know?</p>
+    <body>
+        <h1>Cards shuffling...</h1>
 
-      <input type="text" class="" id="question" placeholder="Enter your question here..." aria-placeholder="Enter your question here">
+        <div clas="shuffling-ani">
+            The cards will be here.
+        </div>
 
-      <button type="submit"><a href="shuffle.html">Submit</a></button>
-    </main>
-  </body>
+        <button class="shuffle-cards" id="start-shuffle">Start Shuffling</button>
+        <button class="shuffle-cards" id="stop-shuffle"><a href="reading.html">Stop Shuffling</a></button>
+    </body>
 </html>
