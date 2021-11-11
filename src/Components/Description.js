@@ -9,14 +9,17 @@ function Description( props ){
     return (
         <div className="description">
             <h2>{heading}</h2>
-            <div className="tarot-description">
-                {description}
-            </div>
             <div className="tarot-meaning">
                 {meaning}
             </div>
-
         </div>)
 }
+
+/*
+            <div className="tarot-description">
+                {description}
+            </div>
+
+*/
  
 export default Description;
