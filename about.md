@@ -9,6 +9,6 @@ The general meaning of the cards will be displayed and can be intrepeted by the 
 
 The user can ask another question for themselves or a friend!
 
-This app is for entertainment purposes only. It is to showcase skills used to make an interactive app for people those interested in learning more about tarot.
+This app is for entertainment purposes only. It is to showcase skills used to make an interactive app for those interested in learning more about tarot.
 
 
