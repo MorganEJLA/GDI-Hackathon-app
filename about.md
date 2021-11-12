@@ -12,3 +12,10 @@ The user can ask another question for themselves or a friend!
 This app is for entertainment purposes only. It is to showcase skills used to make an interactive app for those interested in learning more about tarot.
 
 
+
+The deck used is known as the Rider Waite Smith Deck. It was previously called the Rider Waite deck named after the instructor Andrew Edward Waite and the publisher the William Rider.
+The artwork used in this deck is by the illustrator who up until recent years had not be widely recognized. The illustrator was non other than Pamela Colman Smith. 
+
+Read more about her here: https://www.shondaland.com/inspire/books/a21940524/demystifying-pamela-colman-smith/
+
+
