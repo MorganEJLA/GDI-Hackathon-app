@@ -9,7 +9,7 @@ function Header( props ){
     return (
       <Navbar>
         <Navbar.Brand style={{marginRight:"auto", marginLeft:"10%"}}>
-          <span className="header-title">Tarot Reading</span>
+          <span className="header page-header">Tarot Reading</span>
         </Navbar.Brand>
         <Navbar.Brand style={{marginLeft:"auto"}}>
           <Menu/>
