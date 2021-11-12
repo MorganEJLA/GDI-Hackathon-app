@@ -1,5 +1,7 @@
 # GDI Tarot App
 Making a fun tarot application!
+  
+![Tarot Cards](./src/Components/assets/tarot-card-back.png)
 
 ## Team Members
 | Name | Role | Contact |
