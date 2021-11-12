@@ -8,8 +8,15 @@
   min-height: 100vh;
 }
 
-.page-header {
+.header {
   font-family: 'Lora', serif;
+}
+.page-header {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.menu-header {
+  margin-top: 1em;
 }
 
 /* Lauren's btn, input, button */
@@ -82,4 +89,9 @@
 
 .navbar {
   background-color: #fadf5a;
+}
+
+.initial {
+  background-color: #fadf5a;
+  height: 95vh;
 }
