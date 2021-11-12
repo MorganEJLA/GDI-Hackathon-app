@@ -8,9 +8,9 @@ function Header( props ){
       <Navbar className="navbar">
         <Nav.Item>
           <Nav.Item>Tarot</Nav.Item>
-          <Nav.Item className="justify-content-end">
-              <Menu/>
-          </Nav.Item>
+          <Navbar.Text>
+            <Menu/>
+          </Navbar.Text>
         </Nav.Item>
       </Navbar>
     )

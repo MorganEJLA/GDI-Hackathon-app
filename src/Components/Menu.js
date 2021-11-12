@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
-import { Offcanvas, } from 'react-bootstrap';
+import { Button, Offcanvas, } from 'react-bootstrap';
+import { BsList } from "react-icons/bs";
 
 function Menu(props) {
   const [show, setShow] = useState(false);
@@ -10,17 +11,27 @@ function Menu(props) {
 
   return (
     <>
-      <div variant="primary" onClick={handleShow}>
-        hamburger.click
-      </div>
+      <Button variant="primary" onClick={handleShow}>
+        <BsList/>
+      </Button>
 
-      <Offcanvas show={show} onHide={handleClose}>
+      <Offcanvas 
+        show={show} 
+        onHide={handleClose}
+      >
+
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>
         </Offcanvas.Header>
+
         <Offcanvas.Body>
-          ...this is where we will put our menu items and links to other pages...
+          <Nav className="justify-content-end flex-grow-1 pe-3">
+            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="#action2">About</Nav.Link>
+            <Nav.Link href="#action2">Instructions</Nav.Link>
+          </Nav>
         </Offcanvas.Body>
+        
       </Offcanvas>
     </>
   );
