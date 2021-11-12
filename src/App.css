@@ -75,6 +75,11 @@
   z-index: 1000;
 }
 
+.ani-container {
+  position: absolute;
+  top: 400px;
+}
+
 .navbar {
   background-color: #fadf5a;
 }
