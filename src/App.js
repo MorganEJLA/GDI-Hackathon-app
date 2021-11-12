@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Header from './Components/Header';
 import Initial from './Components/Initial';
 import Shuffling from './Components/Shuffling';
@@ -8,8 +8,8 @@ import ShowCards from './Components/ShowCards';
 
 function App() {
 
-  const [ appState, setAppState ] = useState('initial'); // options are initial, shuffling, results
-  const [ chosenCards, setChosenCards ] = useState([ 0, 0, 0]);
+  const [ appState, setAppState ] = useState( 'initial' ); // options are initial, shuffling, results
+  const [ chosenCards, setChosenCards ] = useState( [ 0, 0, 0] );
   const [ question, setQuestion ] = useState('')
   const [ facingUp, setFacingUp ] = useState( [ true, true, true ] );
 
@@ -32,19 +32,18 @@ function App() {
           tempFacingUp[i] = false;
         }
     }
-    setChosenCards(tempCards);
+    setChosenCards( tempCards );
     setFacingUp( tempFacingUp );
     setAppState( 'results' );
   }
 
-
-
-  const updateToInitial = (  ) => setAppState( 'initial' );
+  const updateToInitial = () => setAppState( 'initial' );
 
   let currentScreen =  (
     <Initial 
       updateToShuffling = { updateToShuffling }
-      updateQuestion = { setQuestion } />
+      updateQuestion = { setQuestion }
+      />
   );
 
   if ( appState === 'shuffling') {
