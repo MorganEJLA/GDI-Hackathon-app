@@ -1,6 +1,10 @@
 import React from 'react'
 import { useState } from 'react';
-import { Button, Offcanvas, } from 'react-bootstrap';
+import { 
+  Button, 
+  Offcanvas,
+  Nav,
+} from 'react-bootstrap';
 import { BsList } from "react-icons/bs";
 
 function Menu(props) {
@@ -11,7 +15,7 @@ function Menu(props) {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button onClick={handleShow}>
         <BsList/>
       </Button>
 
@@ -31,7 +35,7 @@ function Menu(props) {
             <Nav.Link href="#action2">Instructions</Nav.Link>
           </Nav>
         </Offcanvas.Body>
-        
+
       </Offcanvas>
     </>
   );
