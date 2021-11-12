@@ -25,7 +25,7 @@ function Menu(props) {
       >
 
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Tarot Reading</Offcanvas.Title>
         </Offcanvas.Header>
 
         <Offcanvas.Body>
