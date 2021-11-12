@@ -28,7 +28,7 @@ function App() {
 
     for (let i=0; i<3; i++){
         let number = Math.floor( Math.random() * 100 );
-        if ( number < 30 ){
+        if ( number < 15 ){
           tempFacingUp[i] = false;
         }
     }
