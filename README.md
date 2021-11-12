@@ -5,7 +5,7 @@ Making a fun tarot application!
 | Name | Role | Contact |
 | - | - | - |
 | Morgan J | project driver, subject specialist, animator | |
-| Laura Stein | reactjs, API integration, dev lead | |
+| Laura Steiner | reactjs, API integration, dev lead | |
 | Itzy Ramirez | lead design, wireframing, user story | |
 | Lauren Liberetti | reactjs, CSS, coordination | |
 | Raine Harwood | HTML, CSS | |
