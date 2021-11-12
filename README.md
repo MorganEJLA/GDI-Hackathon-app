@@ -9,7 +9,7 @@ Making a fun tarot application!
 | Itzy Ramirez | lead design, wireframing, user story | |
 | Lauren Liberetti | reactjs, CSS, coordination | |
 | Raine Harwood | HTML, CSS | |
-| Julia Silver | project management, reactjs, UI, CSS, design | |
+| Julia Silver | project management, reactjs, UI, CSS, design | [link](juliasilver.com) |
 
 
 ## Links
