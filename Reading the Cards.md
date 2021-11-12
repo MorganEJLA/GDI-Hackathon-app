@@ -10,4 +10,3 @@ Present: This represents you and environment. Where you are right now.
 Future: Outcome; the culmination of the energy of the first two cards. 
 
 
-
