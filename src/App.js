@@ -11,6 +11,7 @@ function App() {
   const [ appState, setAppState ] = useState('initial'); // options are initial, shuffling, results
   const [ chosenCards, setChosenCards ] = useState([ 0, 0, 0]);
   const [ question, setQuestion ] = useState('')
+  const [ facingUp, setFacingUp ] = useState( [ true, true, true ] );
 
   const updateToShuffling = (  ) => setAppState( 'shuffling' );
 
@@ -22,7 +23,17 @@ function App() {
         tempCards.push(newCard);
       };
     }
+
+    let tempFacingUp = [true, true, true];
+
+    for (let i=0; i<3; i++){
+        let number = Math.floor( Math.random() * 100 );
+        if ( number < 30 ){
+          tempFacingUp[i] = false;
+        }
+    }
     setChosenCards(tempCards);
+    setFacingUp( tempFacingUp );
     setAppState( 'results' );
   }
 
@@ -42,6 +53,7 @@ function App() {
      currentScreen = <ShowCards 
       onClick = { updateToInitial } 
       cards={ chosenCards }
+      facingUp = { facingUp }
       question = { question } 
     />;
   }
