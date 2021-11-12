@@ -138,9 +138,15 @@
   padding-top: 2em;
   padding-bottom: 2em;
 }
+
 .card-desc {
   padding-top: 2em;
 }
+
+.shuffling {
+  min-height: 95vh;
+}
+
 .another-reading {
   background-color: #fadf5a;
   border-radius: 5px;
