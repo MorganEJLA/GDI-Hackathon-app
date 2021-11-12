@@ -30,6 +30,10 @@
   color: black;
 }
 
+.shuffling {
+  background-color: #80ADC2;
+}
+
 /* Lauren's btn, input, button */
 .btn {
   background-color: #364153;
@@ -97,6 +101,7 @@
 .ani-container {
   position: absolute;
   top: 400px;
+  background-color: #80ADC2;
 }
 
 .navbar {
