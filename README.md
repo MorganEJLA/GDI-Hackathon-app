@@ -17,7 +17,7 @@ Making a fun tarot application!
 ## Links
 [Wireframes, user story, and design elements](https://www.figma.com/file/lSQ9oeAEw8eHLGKUCOLI72/Girl-Develop-It-Hackathon-(Tarot-Deck)?node-id=1%3A47)  
 [About the app](./docs/about.md)  
-[Instructions](./docs/Reading the Cards.md)
+[Instructions](./docs/ReadingTheCards.md)
 
 ## Development Notes
 This was created with reactjs. Please, feel free to fork and re-use the content here with credits.  
