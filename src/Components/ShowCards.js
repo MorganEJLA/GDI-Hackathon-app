@@ -5,7 +5,7 @@ import cards, { imageFiles } from '../cards';
 
 function ShowCards( props ){
 
-    const question = props.question ? 'about: ' + props.question : 'about: Will I be a successful developer?';
+    const question = props.question ? 'about: ' + props.question : '';
 
     let chosenCards = props.cards ? props.cards : [ 2, 2, 2];
     let facingUp = props.facingUp ? props.facingUp : [true, true, true ];
