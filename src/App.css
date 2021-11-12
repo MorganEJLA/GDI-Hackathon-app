@@ -1,6 +1,42 @@
+/* body { 
+  background-color:#fadf5a;
+} */
+
 .App {
   text-align: center;
+  background-color: white;
+  height: 100vh;
 }
+
+.page-header {
+  font-family: 'Lora', serif;
+}
+
+/* Lauren's btn, input, button */
+.btn {
+  background-color: #364153;
+  font-size: 16px;
+  padding:10px 20px; 
+  display: inline-block;
+  border-radius:5px;
+  color :white;
+}
+
+.input {
+  background-color: white;
+  border-color: white;
+  padding:20px 10px;
+  border-radius:5px;
+  margin: 30px;
+  width: 40%;
+  align: center;
+}
+
+.btn {
+  padding:10px 30px;
+  margin: 20px;
+}
+/* Lauren's btn, input, button end */
 
 .show-cards {
   max-width: 500px;
@@ -25,4 +61,16 @@
 
 .tarot-description{
   margin-bottom: 10px;
+}
+
+.upside-down {
+  -webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */
+  -moz-transform: rotate(180deg);        /* FF */
+  -o-transform: rotate(180deg);          /* Opera */
+  -ms-transform: rotate(180deg);         /* IE9 */
+  transform: rotate(180deg);             /* W3C compliant browsers */
+}
+
+.navbar {
+  background-color: #fadf5a;
 }

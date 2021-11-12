@@ -3,7 +3,7 @@ import React from 'react';
 function Description( props ){
 
     const heading = props.heading ? props.heading : 'Awesome Heading';
-    const description = props.description ? props.description : 'Description';
+    //const description = props.description ? props.description : 'Description';
     const meaning = props.meaning ? props.meaning : 'Meaning';
 
     return (
