@@ -1,14 +1,18 @@
 import React from 'react';
-//import Button from './Components/Button';
+import ShuffleAnimation from './ShuffleAnimation';
 
 function Shuffling( props ){
 
-    return (
-        <div className="shuffling">
-            <h1>Morgan's awesome animation here</h1> 
-            <button className="btn btn-primary" onClick={props.onClick}>End Shuffle</button>
-        </div>
-    )
+  return (
+    <div className="shuffling">
+      <div>
+        <ShuffleAnimation />
+      </div>
+      <div className="shuffle-button">
+        <button className="btn btn-primary" onClick={ props.onClick }>End Shuffle</button>
+      </div>
+    </div>
+  )
 }
  
 export default Shuffling;

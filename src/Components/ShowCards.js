@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Description from './Description';
 import Card from './Card';
 import cards, { imageFiles } from '../cards';
@@ -12,25 +12,25 @@ function ShowCards( props ){
 
     return (
         <div className="show-cards">
-            <h1>Your reading {question} </h1>
+            <h1>Your reading { question } </h1>
             <div className="cards-display">
                 <Card 
                     heading="Past" 
                     image={ imageFiles[cards[chosenCards[0]].name_short] }
                     name={ cards[chosenCards[0]].name }
-                    facingUp= {facingUp[0]}
+                    facingUp= { facingUp[0] }
                 />
                 <Card 
                     heading="Present" 
                     image={ imageFiles[cards[chosenCards[1]].name_short] }
                     name={ cards[chosenCards[1]].name }
-                    facingUp= {facingUp[1]}
+                    facingUp= { facingUp[1] }
                 />
                 <Card 
                     heading="Future" 
                     image={ imageFiles[cards[chosenCards[2]].name_short] }
                     name={ cards[chosenCards[2]].name }
-                    facingUp= {facingUp[2]}
+                    facingUp= { facingUp[2] }
                 />
             </div>
             <Description 
@@ -48,7 +48,7 @@ function ShowCards( props ){
                 description={ cards[chosenCards[2]].desc}
                 meaning={ facingUp[2] ? cards[chosenCards[2]].meaning_up : cards[chosenCards[2]].meaning_rev }
             />
-            <button className="btn btn-primary" onClick={props.onClick}>Start Over</button>
+            <button className="btn btn-primary" onClick={ props.onClick }>Start Over</button>
         </div>
     )
 }

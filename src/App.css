@@ -5,7 +5,7 @@
 .App {
   text-align: center;
   background-color: white;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .page-header {
@@ -29,7 +29,7 @@
   border-radius:5px;
   margin: 30px;
   width: 40%;
-  align: center;
+  text-align: center;
 }
 
 .btn {
@@ -69,6 +69,15 @@
   -o-transform: rotate(180deg);          /* Opera */
   -ms-transform: rotate(180deg);         /* IE9 */
   transform: rotate(180deg);             /* W3C compliant browsers */
+}
+
+.shuffle-button {
+  z-index: 1000;
+}
+
+.ani-container {
+  position: absolute;
+  top: 400px;
 }
 
 .navbar {

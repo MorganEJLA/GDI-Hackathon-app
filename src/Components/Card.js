@@ -9,7 +9,7 @@ function Card( props ) {
 
   return (
     <div className="card">
-        <h2>{heading}</h2>
+        <h2>{ heading }</h2>
         <img src={ image } alt ={ name } className={ facingUp } />
         <div className="card-name">{ name }</div>
     </div>
