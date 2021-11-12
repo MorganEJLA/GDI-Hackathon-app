@@ -14,13 +14,11 @@ top: 50%;
 transform: translate(-50%,-50%);
 }
 
-/* article, */
 .ani-container figure,
 .ani-container div {
   width: 150px;
   height: 350px;
   border-radius: 3px;
-  /* box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.79); */
   filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.33));
   background: url('./assets/tarot-card-back.png') no-repeat center; 
   position: absolute;

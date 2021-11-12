@@ -31,7 +31,7 @@ function ShuffleAnimation() {
           </figure>
         </article>
       
-        <article class = "spin">
+        <article className="spin">
           <figure>
             <div></div>
             <div></div>

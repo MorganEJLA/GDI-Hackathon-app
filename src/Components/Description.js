@@ -3,23 +3,15 @@ import React from 'react';
 function Description( props ){
 
     const heading = props.heading ? props.heading : 'Awesome Heading';
-    //const description = props.description ? props.description : 'Description';
     const meaning = props.meaning ? props.meaning : 'Meaning';
 
     return (
         <div className="description">
-            <h2>{heading}</h2>
+            <h2>{ heading }</h2>
             <div className="tarot-meaning">
-                {meaning}
+                { meaning }
             </div>
         </div>)
 }
-
-/*
-            <div className="tarot-description">
-                {description}
-            </div>
-
-*/
  
 export default Description;

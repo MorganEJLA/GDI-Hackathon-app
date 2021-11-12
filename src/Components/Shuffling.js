@@ -1,5 +1,4 @@
 import React from 'react';
-//import Button from './Components/Button';
 import ShuffleAnimation from './ShuffleAnimation';
 
 function Shuffling( props ){
@@ -9,8 +8,8 @@ function Shuffling( props ){
       <div>
         <ShuffleAnimation />
       </div>
-      <div>
-        <button className="btn btn-primary" onClick={props.onClick}>End Shuffle</button>
+      <div className="shuffle-button">
+        <button className="btn btn-primary" onClick={ props.onClick }>End Shuffle</button>
       </div>
     </div>
   )
