@@ -5,7 +5,6 @@ import cards, { imageFiles } from '../cards';
 
 function ShowCards( props ){
 
-    // TODO -- remove, just for testing
     const question = props.question ? 'about: ' + props.question : 'about: Will I be a successful developer?';
 
     let chosenCards = props.cards ? props.cards : [ 2, 2, 2];
