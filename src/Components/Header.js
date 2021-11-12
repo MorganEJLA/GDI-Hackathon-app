@@ -1,17 +1,17 @@
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar } from 'react-bootstrap';
 import Menu from './Menu';
+
 
 function Header( props ){
 
     return (
-      <Navbar className="navbar">
-        <Nav.Item>
-          <Nav.Item>Tarot</Nav.Item>
-          <Nav.Item className="justify-content-end">
-              <Menu/>
-          </Nav.Item>
-        </Nav.Item>
+      <Navbar>
+        <Navbar.Brand style={{marginRight:"auto", marginLeft:"10%"}}>Tarot</Navbar.Brand>
+        <Navbar.Brand style={{marginLeft:"auto"}}>
+          <Menu/>
+        </Navbar.Brand>
       </Navbar>
     )
 } 
