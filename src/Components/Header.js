@@ -8,7 +8,9 @@ function Header( props ){
 
     return (
       <Navbar>
-        <Navbar.Brand style={{marginRight:"auto", marginLeft:"10%"}}>Tarot</Navbar.Brand>
+        <Navbar.Brand style={{marginRight:"auto", marginLeft:"10%"}}>
+          Tarot Reading
+        </Navbar.Brand>
         <Navbar.Brand style={{marginLeft:"auto"}}>
           <Menu/>
         </Navbar.Brand>
