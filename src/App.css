@@ -1,10 +1,11 @@
+/* body { 
+  background-color:#fadf5a;
+} */
+
 .App {
   text-align: center;
-  background-color:#fadf5a;
-}
-
-body { 
-  background-color:#fadf5a;
+  background-color: white;
+  height: 100vh;
 }
 
 .page-header {
@@ -68,4 +69,8 @@ body {
   -o-transform: rotate(180deg);          /* Opera */
   -ms-transform: rotate(180deg);         /* IE9 */
   transform: rotate(180deg);             /* W3C compliant browsers */
+}
+
+.navbar {
+  background-color: #fadf5a;
 }
