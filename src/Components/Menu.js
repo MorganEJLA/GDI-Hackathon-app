@@ -15,7 +15,7 @@ function Menu(props) {
 
   return (
     <>
-      <Button onClick={handleShow}>
+      <Button onClick={handleShow} className='btn btn-nav'>
         <BsList/>
       </Button>
 
@@ -30,7 +30,7 @@ function Menu(props) {
 
         <Offcanvas.Body>
           <Nav className="justify-content-center flex-grow-1 pe-3">
-            <Nav.Link className="menu-link" href="#action1">&nbsp; Home</Nav.Link>
+            <Nav.Link className="menu-link" href="/">&nbsp; Home</Nav.Link>
             <Nav.Link className="menu-link" href="#action2">&nbsp; About</Nav.Link>
             <Nav.Link className="menu-link" href="#action2">&nbsp; Instructions</Nav.Link>
           </Nav>

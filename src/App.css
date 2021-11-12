@@ -8,7 +8,7 @@
   min-height: 100vh;
 }
 
-.header {
+.header, h2 {
   font-family: 'Lora', serif;
 }
 .page-header {
@@ -37,13 +37,31 @@
 /* Lauren's btn, input, button */
 .btn {
   background-color: #364153;
-  font-size: 16px;
+  font-size: 1em;
   padding:10px 20px; 
   display: inline-block;
   border-radius:5px;
   color :white;
+  padding:.8em;
+  margin: 20px;
+  border-color: #364153;
 }
-
+.btn:hover {
+  background-color: #80ADC2;
+  border-color: #80ADC2;
+}
+.btn-nav {
+  padding: 0px;
+  background-color: transparent;
+  font-size: 2em;
+  border-color: transparent;
+  color: black;
+}
+.btn-nav:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #80ADC2;
+}
 .input {
   background-color: white;
   border-color: white;
@@ -55,10 +73,6 @@
   font-style: italic;
 }
 
-.btn {
-  padding:10px 30px;
-  margin: 20px;
-}
 /* Lauren's btn, input, button end */
 
 .show-cards {
@@ -100,8 +114,7 @@
 
 .ani-container {
   position: absolute;
-  top: 400px;
-  background-color: #80ADC2;
+  top: 200px;
 }
 
 .navbar {
@@ -112,4 +125,24 @@
   background-color: #fadf5a;
   height: 95vh;
   padding-top: 10em;
+}
+
+.question-result {
+  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 2em;
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+.cards-display {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.card-desc {
+  padding-top: 2em;
+}
+.another-reading {
+  background-color: #fadf5a;
+  border-radius: 5px;
+  padding: 1em;
 }

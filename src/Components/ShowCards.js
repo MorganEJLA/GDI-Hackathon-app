@@ -5,14 +5,17 @@ import cards, { imageFiles } from '../cards';
 
 function ShowCards( props ){
 
-    const question = props.question ? 'about: ' + props.question : '';
+    const question = props.question ? '' + props.question : '';
 
     let chosenCards = props.cards ? props.cards : [ 2, 2, 2];
     let facingUp = props.facingUp ? props.facingUp : [true, true, true ];
 
     return (
         <div className="show-cards">
-            <h1>Your reading { question } </h1>
+            <h1 className='header content-header'>Your reading...</h1>
+            <div className="question-result">
+              { question } 
+            </div>
             <div className="cards-display">
                 <Card 
                     heading="Past" 
@@ -33,22 +36,32 @@ function ShowCards( props ){
                     facingUp= { facingUp[2] }
                 />
             </div>
+            <br/>
             <Description 
+                className="card-desc"
                 heading="Past"
                 description={ cards[chosenCards[0]].desc}
                 meaning={ facingUp[0] ? cards[chosenCards[0]].meaning_up : cards[chosenCards[0]].meaning_rev }
             />
+            <br/>
             <Description 
+                className="card-desc"
                 heading="Present"
                 description={ cards[chosenCards[1]].desc}
                 meaning={ facingUp[1] ? cards[chosenCards[1]].meaning_up : cards[chosenCards[1]].meaning_rev }
             />
+            <br/>
             <Description 
+                className="card-desc"
                 heading="Future"
                 description={ cards[chosenCards[2]].desc}
                 meaning={ facingUp[2] ? cards[chosenCards[2]].meaning_up : cards[chosenCards[2]].meaning_rev }
             />
-            <button className="btn btn-primary" onClick={ props.onClick }>Start Over</button>
+            <br/>
+            <div className='another-reading'>
+            <h2>Do you want another reading?</h2>
+            <button className="btn btn-primary" onClick={ props.onClick }>Try Again</button>
+            </div>
         </div>
     )
 }

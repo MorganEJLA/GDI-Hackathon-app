@@ -33,6 +33,7 @@ function Initial( props ){
             </div>
           </div>
         </form>
+        {/* <img src='../../public/assets/tarot_symbols1.png' alt=""/> */}
       </div>
   )
 }
