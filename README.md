@@ -1,5 +1,7 @@
 # GDI Tarot App
 Making a fun tarot application!
+
+Deployed demo at [Netlify](https://tarot-reading-gdi.netlify.app/)
   
 ![Tarot Cards](./src/Components/assets/tarot-card-back.png)
 
@@ -11,7 +13,7 @@ Making a fun tarot application!
 | Itzy Ramirez | lead design, wireframing, user story | |
 | Lauren Liberetti | reactjs, CSS, coordination | |
 | Raine Harwood | HTML, CSS | |
-| Julia Silver | project management, reactjs, UI, CSS, design | [link](juliasilver.com) |
+| Julia Silver | project management, reactjs, UI, CSS, design, deployment | [link](juliasilver.com) |
 
 
 ## Links
