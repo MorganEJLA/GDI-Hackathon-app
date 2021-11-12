@@ -29,10 +29,10 @@ function Menu(props) {
         </Offcanvas.Header>
 
         <Offcanvas.Body>
-          <Nav className="justify-content-end flex-grow-1 pe-3">
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">About</Nav.Link>
-            <Nav.Link href="#action2">Instructions</Nav.Link>
+          <Nav className="justify-content-center flex-grow-1 pe-3">
+            <Nav.Link className="menu-link" href="#action1">&nbsp; Home</Nav.Link>
+            <Nav.Link className="menu-link" href="#action2">&nbsp; About</Nav.Link>
+            <Nav.Link className="menu-link" href="#action2">&nbsp; Instructions</Nav.Link>
           </Nav>
         </Offcanvas.Body>
 

@@ -15,7 +15,7 @@ function Initial( props ){
 
   return (
       <div className="initial">
-        <div className="question">
+        <div className="header content-header">
         What would you like to know? 
         </div>
 
