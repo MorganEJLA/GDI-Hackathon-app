@@ -7,14 +7,13 @@ function Header( props ){
     return (
       <Navbar className="navbar">
         <Nav.Item>
-          <Nav.Link href="/">Tarot Reading</Nav.Link>
+          <Nav.Item>Tarot</Nav.Item>
           <Nav.Item className="justify-content-end">
               <Menu/>
           </Nav.Item>
-          <Menu/>
         </Nav.Item>
       </Navbar>
     )
-}
+} 
  
 export default Header;
