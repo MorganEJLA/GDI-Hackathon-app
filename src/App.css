@@ -21,6 +21,9 @@
 .menu-header {
   margin-top: 1em;
 }
+a {
+  color: black;
+}
 .menu-link {
   color: black;
   font-weight: bold;
