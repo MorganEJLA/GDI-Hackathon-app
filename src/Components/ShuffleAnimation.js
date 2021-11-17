@@ -2,8 +2,8 @@ import './shuffle.css'
 
 function ShuffleAnimation() {
   return (
-    <div>
-      <span className="ani-container">
+    <div className="ani-container">
+      <span>
         <article>
           <figure>
             <div></div>

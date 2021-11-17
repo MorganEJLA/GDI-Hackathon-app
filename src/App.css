@@ -21,6 +21,9 @@
 .menu-header {
   margin-top: 1em;
 }
+a {
+  color: black;
+}
 .menu-link {
   color: black;
   font-weight: bold;
@@ -113,8 +116,12 @@
 }
 
 .ani-container {
-  position: absolute;
-  top: 200px;;
+  /* position: fixed; */
+  display: grid;
+  /* max-width: 50%;
+  justify-self: center;
+  justify-items: center; */
+  top: 20vh;
 }
 
 .navbar {
@@ -124,7 +131,7 @@
 .initial {
   background-color: #fadf5a;
   height: 95vh;
-  padding-top: 10em;
+  padding-top: 5em;
 }
 
 .question-result {

@@ -3,9 +3,13 @@ import { useState } from 'react';
 import { 
   Button, 
   Offcanvas,
-  Nav,
+  Accordion,
+  Nav
 } from 'react-bootstrap';
 import { BsList } from "react-icons/bs";
+import About from './pages/About'
+import Instructions from './pages/Instructions'
+
 
 function Menu(props) {
   const [show, setShow] = useState(false);
@@ -22,18 +26,34 @@ function Menu(props) {
       <Offcanvas 
         show={show} 
         onHide={handleClose}
+        
       >
 
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title className="header page-header menu-header">Tarot Reading</Offcanvas.Title>
+          <Offcanvas.Title className="header page-header menu-header"><Nav.Link style={{color:"black"}} href="/">Tarot Reading</Nav.Link></Offcanvas.Title>
         </Offcanvas.Header>
 
         <Offcanvas.Body>
-          <Nav className="justify-content-center flex-grow-1 pe-3">
-            <Nav.Link className="menu-link" href="/">&nbsp; Home</Nav.Link>
-            <Nav.Link className="menu-link" href="#action2">&nbsp; About</Nav.Link>
-            <Nav.Link className="menu-link" href="#action2">&nbsp; Instructions</Nav.Link>
-          </Nav>
+          
+
+          <Accordion flush>
+
+            <Accordion.Item eventKey="0">
+              <Accordion.Header><Nav.Link style={{color:"black"}}>About</Nav.Link></Accordion.Header>
+              <Accordion.Body>
+                <About/>
+              </Accordion.Body>
+            </Accordion.Item>
+
+            <Accordion.Item eventKey="1">
+              <Accordion.Header ><Nav.Link style={{color:"black"}}>Instructions</Nav.Link></Accordion.Header>
+              <Accordion.Body>
+                <Instructions/>
+              </Accordion.Body>
+            </Accordion.Item>
+
+          </Accordion>
+
         </Offcanvas.Body>
 
       </Offcanvas>

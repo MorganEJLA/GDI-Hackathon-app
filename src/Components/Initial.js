@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import InitAnimation from './InitAnimation';
 
 function Initial( props ){
   const [ currentQ, setCurrentQ ] = useState('')
@@ -15,6 +16,7 @@ function Initial( props ){
 
   return (
       <div className="initial">
+        <InitAnimation/>
         <div className="header content-header">
         What would you like to know? 
         </div>
