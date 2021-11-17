@@ -3,15 +3,24 @@
   width: 100%;
 }
 
-.ani-container span { 
-position: absolute;
-display: block;
-width: 450px;
-height: 450px;
-margin: 0 auto;
-left: 50%;
-top: 50%;
-transform: translate(-50%,-50%);
+.ani-container span {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  height: 50vh;
+  /* justify-content: center; */
+  align-content: center;
+}
+
+.ani-container article {
+  z-index: 1;
+  justify-self: center;
+  align-self: center;
+  /* margin: auto; */
+  -webkit-transform: translateY(-200px) translateX(-150px); 
+  -moz-transform: translateY(-200px) translateX(-150px); 
+  -ms-transform: translateY(-200px) translateX(-150px); 
+  transform: translateY(-200px) translateX(-150px); 
 }
 
 .ani-container figure,
@@ -21,8 +30,9 @@ transform: translate(-50%,-50%);
   border-radius: 3px;
   filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.33));
   background: url('./assets/tarot-card-back.png') no-repeat center; 
+  animation: shuffle2 2s ease infinite;
   position: absolute;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .ani-container figure {
@@ -39,34 +49,34 @@ animation-direction: reverse;
 }
 
 .ani-container figure:nth-child(2) {
-left: 150px;
+/* left: 150px; */
 animation-delay: .5s;
 }
 
 .ani-container figure:nth-child(3) {
-left: 150px;
-top: 150px;
+/* left: 150px; */
+/* top: 150px; */
 animation-delay: 1s;
 }
 
 .ani-container figure:nth-child(4) {
-top: 150px;
+/* top: 150px; */
 animation-delay: 1.5s;
 }
 
 .ani-container div:nth-child(2) {
-left: 50px;
+/* left: 50px; */
 animation-delay: .5s;
 }
 
 .ani-container div:nth-child(3) {
-left: 50px;
-top: 50px;
+/* left: 50px; */
+/* top: 50px; */
 animation-delay: 1s;
 }
 
 .ani-container div:nth-child(4) {
-top: 50px;
+/* top: 50px; */
 animation-delay: 1.5s;
 }
 
